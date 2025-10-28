@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Annalie Bruns</title>
+  <style>
+      body {
+          font-family: 'Segoe UI', sans-serif;
+          margin: 0;
+          padding: 0;
+          background: #F2EAD5;
+          color: #6F4F2A;
+      }
+
+      header {
+          background-color: #4E3E2E;
+          color: white;
+          padding: 20px;
+          text-align: center;
+      }
+
+    header h1 {
+      margin: 0;
+    }
+
+      nav {
+          background-color: #A67C52;
+          text-align: center;
+          padding: 10px 0;
+      }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #4E3E2E;
+    }
+
+    .cv-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #800000;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .skills ul, .languages ul {
+      list-style: none;
+      padding: 0;
+    }
+
+      .skills li, .languages li {
+          background: #C49B6E;
+          color: white;
+          display: inline-block;
+          margin: 5px;
+          padding: 8px 12px;
+          border-radius: 20px;
+      }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background: #4E3E2E;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button {
+      background: #ffffff;
+      color: #A67C52;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+      button:hover {
+          background-color: #e0e0e0;
+          color: #ffffff;
+      }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+    }
+
+      .cv-button {
+       display: inline-block;
+       margin-top: 10px;
+       padding: 10px 20px;
+       background: #4E3E2E;
+       color: white;
+       text-decoration: none;
+       border-radius: 5px;
+       transition: background-color 0.3s ease;
+      }
+
+    .cv-button:hover {
+     background-color: #e0e0e0;
+    }
+
+    @media (max-width: 768px){
+      .cv-button {
+	padding: 16px 32px;
+	font-size: 18px;
+	}
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Annalie Bruns</h1>
+    <p>International Relations | Cultural Exchange | Language Specialist</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#cv">CV</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+<button id="lang-toggle" onclick="toggleLanguage()">日本語</button>
+  </nav>
+
+  <section id="about">
+    <h2 data-en="About Me" data-ja="自己紹介">About Me</h2>
+    <p data-en="Hello, my name is Annalie Bruns." 
+    data-ja="こんにちは。ブルンス・アナリーと申します。">
+    </p>
+    <p data-en="I am deeply passionate about fostering international collaboration, particularly between diverse cultures and countries. Through my ongoing Japanese language studies and a strong interest in cross-cultural communication, I bring a unique blend of professionalism, empathy, and enthusiasm to everything I do." 
+    data-ja="私は、多国間や多様な文化間での協力関係を促進することに強い情熱を持っています。日本語の学習と日本人との関係構築を行う中で、異文化交流への深い関心と文化理解力を培ってきました。これにより、どのような環境でも、専門性・共感力・熱意をもって取り組む姿勢を大切にしています。">
+    </p>
+    <p data-en="I am currently seeking an opportunity to contribute to the mission of the Japanese Embassy, where I can apply my cultural awareness, language skills, and dedication to international understanding in a meaningful way." 
+    data-ja="現在、私は日本大使館の使命に貢献できる機会を探しております。 これまでに培った文化理解力と言語能力、そして国際的な相互理解への強い思いを活かし、意義ある形で貢献したいと考えております。">
+    </p>
+  </section>
+
+  <section id="cv">
+      <h2 data-en="Curriculum Vitae" data-ja="履歴書・職務経歴書"></h2>
+      <p data-en="You can view and download my full CV below for a detailed overview of my qualifications, professional experience, and academic background." data-ja="以下のリンクより、私の資格、職務経歴、学歴に関する詳細をご確認・ダウンロードいただけます。"></p>
+          <a href="Files/web-CV.html" class="cv-button" id="cv-button" data-en="View My CV" data-ja="履歴書を見る">View My CV</a>
+      </section>
+
+      <section id="skills">
+        <h2 data-en="Skills &amp; Languages" data-ja="スキル・言語"></h2>
+        <div class="skills">
+          <h3>Professional Skills</h3>
+          <ul>
+            <li>Cross-cultural Communication</li>
+            <li>Research</li>
+            <li>Team Management</li>
+            <li>Programming</li>
+            <li>Graphic Design</li>
+            <li>3D Design</li>
+            <li>Interactive Design</li>
+          </ul>
+        </div>
+        <div class="languages">
+          <h3>Languages</h3>
+          <ul>
+            <li>Dutch - Native</li>
+            <li>English - Fluent</li>
+            <li>Japanese - JLPT N5 / Beginner to Intermediate</li>
+            <li>French - Intermediate</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 data-en="Contact Me" data-ja="ご連絡はこちらから"></h2>
+        <p data-en='If you&apos;d like to get in touch, please fill out the form below or email me directly at <strong>annaliebruns@gmail.com</strong>.'
+          data-ja='ご連絡をご希望の際は、下記のフォームにご記入いただくか、<strong>annaliebruns@gmail.com</strong> までメールにてご連絡ください。'>
+        </p>  
+        <form action="mailto:annaliebruns@gmail.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your Name" required="">
+          <input type="email" name="email" placeholder="Your Email" required="">
+          <textarea name="message" rows="5" placeholder="Your Message" required=""></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>© 2025 Annalie Bruns. All rights reserved.</p>
+      </footer>
+
+    <script>
+    let currentLang = 'en';
+
+    function toggleLanguage() {
+    currentLang = currentLang === 'en' ? 'ja' : 'en';
+
+    const elements = document.querySelectorAll('[data-en]');
+    elements.forEach(el => {
+        el.innerHTML = el.getAttribute(`data-${currentLang}`);
+    });
+
+    const toggleBtn = document.getElementById('lang-toggle');
+    toggleBtn.innerHTML = currentLang === 'en' ? '日本語' : 'English';
+    }
+
+    // Set initial text content based on default language
+    window.addEventListener('DOMContentLoaded', () => {
+        const elements = document.querySelectorAll('[data-en]');
+        elements.forEach(el => {
+            el.innerHTML = el.getAttribute('data-en');
+        });
+
+        const toggleBtn = document.getElementById('lang-toggle');
+        toggleBtn.innerHTML = '日本語'; // because currentLang is 'en'
+    });
+</script>
+
+    </body></html>
